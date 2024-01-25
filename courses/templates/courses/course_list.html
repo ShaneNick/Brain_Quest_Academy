@@ -1,5 +1,6 @@
 <!-- courses/templates/courses/course_list.html -->
 <h1>Courses</h1>
+<a href = "{% url 'create_course'%}">Create New Course</a>
 <ul>
     {% for course in courses %}
         <li>{{ course.title }}</li>
